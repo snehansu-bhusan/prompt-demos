@@ -1,3 +1,4 @@
+# pip install openai==0.28
 import openai
 import math
 
@@ -24,7 +25,7 @@ def euclidean_distance(vector1, vector2):
 
 def generate_response(prompt):
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="gpt-3.5-turbo",
         prompt=prompt,
         max_tokens=150,
         n=1,
